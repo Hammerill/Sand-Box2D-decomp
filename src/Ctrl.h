@@ -1,13 +1,18 @@
+#pragma once
+
 class Ctrl
 {
-    Ctrl::Check(void);
-    Ctrl::getExit(void);
-    Ctrl::getReset(void);
-    Ctrl::getFullscreen(void);
-    Ctrl::getMoveUp(void);
-    Ctrl::getMoveRight(void);
-    Ctrl::getMoveDown(void);
-    Ctrl::getMoveLeft(void);
-    Ctrl::getZoomIn(void);
-    Ctrl::getZoomOut(void);
+    SDL_Event Ctrl::e;
+
+    void Ctrl::Check();
+
+    int Ctrl::getExit();
+    int Ctrl::getReset();
+    int Ctrl::getFullscreen();
+    int Ctrl::getMoveUp();
+    int Ctrl::getMoveRight();
+    int Ctrl::getMoveDown();
+    int Ctrl::getMoveLeft();
+    int Ctrl::getZoomIn();
+    int Ctrl::getZoomOut();
 };

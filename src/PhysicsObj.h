@@ -1,6 +1,8 @@
+#pragma once
+
 class PhysicsObj
 {
-    PhysicsObj::~PhysicsObj();
-    PhysicsObj::LoadTexture(SDL_Renderer *);
-    PhysicsObj::getBody(void);
+  PhysicsObj::~PhysicsObj();
+  void PhysicsObj::LoadTexture(SDL_Renderer *);
+  b2Body* PhysicsObj::getBody(void);
 };
